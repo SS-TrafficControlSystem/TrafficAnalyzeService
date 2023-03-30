@@ -18,7 +18,7 @@ public class HistoryTraffic {
     LocalDateTime localDateTime;
     double averageTime;
     CongestionType congestionType;
-    private String TrafficType;
+    private TrafficType TrafficType;
     private long coutnCars;
 
 }

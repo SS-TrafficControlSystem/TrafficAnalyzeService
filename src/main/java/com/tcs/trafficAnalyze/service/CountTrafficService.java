@@ -45,7 +45,7 @@ public class CountTrafficService {
         historyTraffic.setId(GeneratorUtils.createUniqueId());
         historyTraffic.setCoutnCars(countCars());
         historyTraffic.setLocalDateTime(LocalDateTime.now());
-        historyTraffic.setTrafficType(TrafficType.COUNT.name());
+        historyTraffic.setTrafficType(TrafficType.COUNT);
 
         return historyTraffic;
     }
