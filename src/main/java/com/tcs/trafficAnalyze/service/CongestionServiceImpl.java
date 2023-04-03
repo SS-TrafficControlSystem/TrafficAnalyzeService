@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 @Service
 @Slf4j
-public class CongestionServiceImpl implements CongestionService {
+public class CongestionServiceImpl {
     @Autowired
     SensorService sensorService;
     @Autowired
@@ -40,7 +40,6 @@ public class CongestionServiceImpl implements CongestionService {
         times = sensors.stream().map(sensorTime -> sensorTime.getTimestamp()).collect(Collectors.toList());
     }
 
-    @Override
     public void save() {
         HistoryTraffic historyTraffic = new HistoryTraffic();
         historyTraffic.setId(GeneratorUtils.createUniqueId());
